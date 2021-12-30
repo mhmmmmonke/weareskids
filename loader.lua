@@ -2,7 +2,7 @@
 -- i just wanna ethot
 
 if game.PlaceId == 286090429 then
-       -- Skidded
+-- Skidded
 -- they be like frosty, how you dealin with the hate?
 
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
@@ -735,6 +735,42 @@ vis:Button("Distance Viewer", function()
         end
     )
 end)
+elseif game.PlaceId == 185655149 then
+       
+       -- hold on man i'm running out of breath and shit
+       local CoastingLibrary = loadstring(game:HttpGet("https://pastebin.com/raw/3gQQtaKX"))()
+
+       local MainTab = CoastingLibrary:CreateTab("Main")
+       local MainSection = MainTab:CreateSection("Main")
+       local About = MainTab:CreateSection("About")
+
+       MainSection:CreateButton("Auto Farm", function()
+          print("Made By Introvert1337")    
+          warn("Snipped By G1gamer#6969")
+          warn("Snipped Using Internet Archive")
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/mhmmmmonke/introvet1337s_bloxburg/main/main.lua"))()
+       end)
+
+       MainSection:CreateLabel("", "AUTOFARM CAN BE BANNABLE!")
+       MainSection:CreateLabel("", "USE LESS THAN 2 HOURS")
+       MainSection:CreateLabel("", "THE DAY")
+
+       MainSection:CreateButton("Anti AFK", function()
+           print("Made By Sigmarillion On V3rm (RE-RELEASE) ")
+           local vu = game:GetService("VirtualUser")
+               game:GetService("Players").LocalPlayer.Idled:connect(function()
+               vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+               wait(1)
+               vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+           end)
+       end)
+       About:CreateLabel("", "      ")
+       About:CreateLabel("", "-------------[CREDITS]-------------")
+       About:CreateLabel("", "Made By Pizzah/AxonZ")
+       About:CreateLabel("", "Autofarm Made By Introvert1773")
+       About:CreateLabel("", "AntiAFK ReRelease By Sigmarillion")
+       About:CreateLabel("","axonz.me")
+
 else
-    warn("Not In Arsenal")
+    warn("Unsupported Game!")
 end
